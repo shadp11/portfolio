@@ -3,7 +3,7 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import {
   AcademicCapIcon,
-  ArrowDownCircleIcon,
+  ArrowDownCircleIcon,  
   ArrowTopRightOnSquareIcon,
   BoltIcon,
   BriefcaseIcon,
