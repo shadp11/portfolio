@@ -255,9 +255,13 @@ function App() {
     };
 
     try {
-      const response = await axios.post("http://localhost:5000/send", data, {
-        timeout: 60000,
-      });
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/send`,
+        data,
+        {
+          timeout: 60000,
+        },
+      );
 
       console.log(response.data);
 
