@@ -209,7 +209,7 @@ const useTypewriter = (
 };
 
 const typewriterWords = [
-  "Data Analyst",
+  "IT Analyst",
   "Business Intelligence Analyst",
   "SQL Developer",
   "Software Quality Analyst",
@@ -329,7 +329,7 @@ function App() {
                 Kaysha Dela Peña
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                Aspiring Data Analyst | BI Enthusiast
+                IT Analyst | Data Enthusiast
               </p>
             </div>
           </div>
@@ -393,7 +393,7 @@ function App() {
               <TypeWriter words={typewriterWords} />
             </div>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-              Aspiring Data Analyst with a strong interest in business
+              Aspiring IT Analyst with a strong interest in business
               intelligence, databases, and data-driven decision making.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -458,7 +458,7 @@ function App() {
               </div>
               <div className="mt-6 space-y-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
                 <p>
-                  I am an aspiring Data Analyst with a strong interest in
+                  I am an aspiring IT Analyst with a strong interest in
                   transforming data into meaningful insights that support better
                   decision-making. I enjoy working with SQL, Power BI, Python,
                   and databases to analyze, visualize, and communicate data
@@ -467,8 +467,8 @@ function App() {
                   practical applications, while my experience with software
                   testing has developed my attention to detail. I am seeking
                   opportunities where I can contribute to data-driven projects
-                  while continuously expanding my analytical and technical
-                  skills.
+                  while continuously expanding my analytical, technical, and
+                  problem-solving skills.
                 </p>
                 <div className="relative rounded-3xl border border-slate-200/80 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-950">
                   <img
@@ -513,7 +513,7 @@ function App() {
                   Career Objective
                 </p>
                 <p className="mt-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
-                  To begin my career as a Data Analyst by applying my knowledge
+                  To begin my career as an IT Analyst by applying my knowledge
                   of SQL, Power BI, Python, and database technologies to solve
                   business problems through data. I aim to contribute to
                   meaningful projects, continuously develop my analytical
