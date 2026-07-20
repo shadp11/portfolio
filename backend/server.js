@@ -9,6 +9,8 @@ console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "Loaded" : "Missing");
 
 const app = express();
 
+app.set("trust proxy", 1);
+
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -27,13 +29,13 @@ const contactLimiter = rateLimit({
 
 // Create transporter ONCE
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
-  connectionTimeout: 10000,
-  socketTimeout: 10000,
 });
 
 // Optional: Verify SMTP connection when server starts
