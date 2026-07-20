@@ -17,24 +17,25 @@ const analyticsProjects = [
     live: null,
     repo: null,
     screenshots: ["/projects/analyticsprojects/sales_dashboard.jpg"],
-  },
+  }
+  // ,
 
-  {
-    title: "HR Analytics Dashboard",
-    description:
-      "Created a Power BI dashboard to analyze employee data, workforce demographics, and attrition trends. Designed interactive reports to identify patterns and support data-driven HR decisions.",
-    technologies: ["Power BI", "Excel", "SQL"],
-    features: [
-      "Employee Overview Dashboard",
-      "Attrition Rate Analysis",
-      "Department Performance",
-      "Employee Demographics",
-      "Interactive Data Visualization",
-    ],
-    live: null,
-    repo: null,
-    screenshots: ["/projects/analyticsprojects/hr_dashboard.jpg"],
-  },
+  // {
+  //   title: "HR Analytics Dashboard",
+  //   description:
+  //     "Created a Power BI dashboard to analyze employee data, workforce demographics, and attrition trends. Designed interactive reports to identify patterns and support data-driven HR decisions.",
+  //   technologies: ["Power BI", "Excel", "SQL"],
+  //   features: [
+  //     "Employee Overview Dashboard",
+  //     "Attrition Rate Analysis",
+  //     "Department Performance",
+  //     "Employee Demographics",
+  //     "Interactive Data Visualization",
+  //   ],
+  //   live: null,
+  //   repo: null,
+  //   screenshots: ["/projects/analyticsprojects/hr_dashboard.jpg"],
+  // },
 ];
 
 export default analyticsProjects;

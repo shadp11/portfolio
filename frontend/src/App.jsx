@@ -3,7 +3,7 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import {
   AcademicCapIcon,
-  ArrowDownCircleIcon,  
+  ArrowDownCircleIcon,
   ArrowTopRightOnSquareIcon,
   BoltIcon,
   BriefcaseIcon,
@@ -254,6 +254,8 @@ function App() {
       message: formData.get("message"),
     };
 
+    console.log(import.meta.env.VITE_API_URL);
+
     try {
       const response = await axios.post(
         `${import.meta.env.VITE_API_URL}/send`,
@@ -402,7 +404,9 @@ function App() {
                 View Projects
               </a>
               <a
-                href="/resume.pdf"
+                href="/Kaysha_DelaPeña_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
               >
                 Download Resume
@@ -490,6 +494,7 @@ function App() {
                   </p>
 
                   <ul className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                    <li>• Graduated Summa Cum Laude</li>
                     <li>
                       • Consistent Dean's First Honor Lister (2022 – 2026)
                     </li>
@@ -497,7 +502,6 @@ function App() {
                       • Doña Miguela M. Jhocson (Blue) Scholar (2023 – 2026)
                     </li>
                     <li>• Doña Pacita J. Ocampo (White) Scholar (2022)</li>
-                    <li>• Graduated Summa Cum Laude</li>
                   </ul>
                 </div>
               </div>
@@ -637,7 +641,7 @@ function App() {
               Data Analytics Projects
             </h3>
 
-            <div className="mt-6 grid gap-8 md:grid-cols-2">
+            <div className="mt-6 grid gap-8 md:grid-cols-1">
               {analyticsProjects.map((project) => (
                 <ProjectCard key={project.title} project={project} />
               ))}
@@ -850,7 +854,9 @@ function App() {
                 </div>
 
                 <a
-                  href="/resume.pdf"
+                  href="/Kaysha_DelaPeña_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-400"
                 >
                   Download Resume

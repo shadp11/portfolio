@@ -11,6 +11,7 @@ const projects = [
       "Node.js",
       "React Native",
       "Firebase",
+      "Tailwind CSS",
     ],
     features: [
       "Employee, Resident, and Household Management",
