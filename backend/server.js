@@ -30,14 +30,16 @@ const contactLimiter = rateLimit({
 // Create transporter ONCE
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
-  connectionTimeout: 30000,
-  socketTimeout: 30000,
+  requireTLS: true,
+  connectionTimeout: 60000,
+  greetingTimeout: 30000,
+  socketTimeout: 60000,
 });
 
 // Optional: Verify SMTP connection when server starts
