@@ -93,8 +93,8 @@ const skillGroups = [
 ];
 
 const businessSkills = [
-  "Requirements Analysis",
   "Business Process Analysis",
+  "Requirements Analysis",
   "Functional Testing",
   "Regression Testing",
   "User Acceptance Testing (UAT)",
@@ -344,7 +344,7 @@ function App() {
                 Kaysha Dela Peña
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                IT Graduate | Aspiring SAP Functional Consultant
+                IT Graduate | Aspiring ERP Functional Consultant
               </p>
             </div>
           </div>
@@ -409,9 +409,10 @@ function App() {
             </div>
             <p className="mt-6 max-w-2xl text-md leading-8 text-slate-600 dark:text-slate-300">
               Information Technology graduate with a strong interest in business
-              process analysis, ERP systems, and technology-driven solutions.
-              Passionate about learning SAP and helping organizations improve
-              business processes through effective system solutions.
+              process analysis, enterprise resource planning (ERP) systems, and
+              technology-driven solutions. Eager to build expertise in ERP
+              applications and contribute to improving business processes
+              through effective system implementation and support.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
@@ -475,15 +476,16 @@ function App() {
               </div>
               <div className="mt-6 space-y-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
                 <p>
-                  I am an Information Technology graduate aspiring to build a
-                  career as an SAP Functional Consultant. I have a strong
-                  interest in business process analysis, ERP systems, and using
-                  technology to solve real-world business challenges. My
-                  background in software development, SQL, databases, and
-                  software testing has strengthened my analytical thinking,
-                  problem-solving abilities, and attention to detail. I am eager
-                  to learn, collaborate with teams, and contribute to projects
-                  that improve business processes through technology.
+                  I am an Information Technology graduate with a strong interest
+                  in enterprise systems, business process analysis, and
+                  technology-driven solutions. Through my academic projects and
+                  technical experience in software development, SQL, databases,
+                  data validation, and software testing, I have developed strong
+                  analytical, problem-solving, and critical thinking skills. I
+                  enjoy understanding how technology supports business
+                  operations and aspire to build a career in ERP consulting,
+                  where I can help organizations improve efficiency through
+                  enterprise solutions.
                 </p>
                 <div className="relative rounded-3xl border border-slate-200/80 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-950">
                   <img
@@ -528,13 +530,13 @@ function App() {
                   Career Objective
                 </p>
                 <p className="mt-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
-                  To begin my career as an entry-level SAP Functional Consultant
-                  by applying my technical knowledge, analytical skills, and
-                  understanding of business processes to support ERP
-                  implementation and business solutions. I am committed to
-                  continuously learning SAP technologies, developing my
-                  consulting skills, and contributing to projects that improve
-                  organizational efficiency and deliver value to clients.
+                  To begin my career as an ERP Functional Consultant by applying
+                  my technical knowledge, analytical skills, and understanding
+                  of business processes to support enterprise system
+                  implementations. I aim to continuously develop my expertise in
+                  ERP platforms, collaborate with experienced professionals, and
+                  contribute to projects that deliver value to organizations and
+                  their clients.
                 </p>
               </div>
               <div className="flex-1 rounded-[2rem] border border-slate-200/80 bg-white/90 p-8 shadow-xl shadow-slate-900/5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80">
@@ -542,20 +544,19 @@ function App() {
                   Personal Summary
                 </p>
                 <p className="mt-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
-                  I am passionate about understanding business requirements and
-                  using technology to create effective solutions. My experience
-                  with software development, SQL, databases, and software
-                  testing has provided me with a strong technical foundation,
-                  while also strengthening my communication, analytical
-                  thinking, and problem-solving skills. As a lifelong learner, I
-                  am excited to grow in the field of SAP and ERP consulting
-                  while helping organizations improve their business processes.
+                  I am a curious and adaptable learner who enjoys solving
+                  problems and continuously improving my skills. I work well
+                  both independently and in collaborative environments and value
+                  clear communication, attention to detail, and effective time
+                  management. I approach new challenges with a positive mindset
+                  and am committed to delivering high-quality results while
+                  growing as an ERP consulting professional.
                 </p>
               </div>
             </div>
           </div>
         </Motion.section>
-
+  
         <Motion.section
           id="skills"
           className="mt-16"
