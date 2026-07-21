@@ -224,8 +224,8 @@ const useTypewriter = (
 };
 
 const typewriterWords = [
-  "SAP Functional Consultant",
-  "ERP Consultant",
+  "ERP Functional Consultant",
+  "Enterprise Applications Consultant",
   "Business Analyst",
   "Business Process Analyst",
 ];
@@ -556,7 +556,7 @@ function App() {
             </div>
           </div>
         </Motion.section>
-  
+
         <Motion.section
           id="skills"
           className="mt-16"
