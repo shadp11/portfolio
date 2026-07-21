@@ -2,22 +2,22 @@ const analyticsProjects = [
   {
     title: "Sales Performance Dashboard",
     description:
-      "Developed an interactive Power BI dashboard using a public sales dataset to analyze sales performance, customer behavior, product performance, and sales trends. Created visualizations and key performance indicators to provide meaningful business insights.",
+      "Developed an interactive Power BI business dashboard to analyze sales process performance, customer trends, and operational metrics using a public sales dataset. Transformed raw data into meaningful reports and KPIs to support business decision-making and demonstrate skills in business analysis and reporting.",
 
     technologies: ["Power BI", "Excel"],
 
     features: [
-      "Sales KPI Tracking (Total Sales, Total Orders, Products Sold, Average Order Value)",
-      "Monthly Sales Trend Analysis",
-      "Sales Analysis by Country",
-      "Product Line Performance Analysis",
-      "Top Customers by Sales",
-      "Interactive Filters and Data Visualization",
+      "Sales KPI Monitoring (Total Sales, Total Orders, Products Sold, Average Order Value)",
+      "Business Performance Trend Analysis",
+      "Regional Sales Performance Analysis",
+      "Product Performance Analysis",
+      "Customer Sales Analysis",
+      "Interactive Filters and Business Reporting Visualizations",
     ],
     live: null,
     repo: null,
     screenshots: ["/projects/analyticsprojects/sales_dashboard.jpg"],
-  }
+  },
   // ,
 
   // {

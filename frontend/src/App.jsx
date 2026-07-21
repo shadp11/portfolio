@@ -19,6 +19,7 @@ import {
   SunIcon,
   XMarkIcon,
   DevicePhoneMobileIcon,
+  ClipboardDocumentCheckIcon,
 } from "@heroicons/react/24/outline";
 import ProjectCard from "./components/ProjectCard";
 import analyticsProjects from "./data/analyticsProjects";
@@ -35,14 +36,13 @@ const navItems = [
 
 // Tech Icons Mapping with Emojis
 const techIcons = {
+  "SAP ERP (Fundamentals – Currently Learning)": "/icons/sap.svg",
   "Power BI": "/icons/powerbi.svg",
+  "Power Apps": "/icons/powerapps.svg",
+  SQL: "/icons/sql.svg",
   MySQL: "/icons/mysql.svg",
-  Excel: "/icons/excel.svg",
-  Python: "/icons/python.svg",
-  Pandas: "/icons/pandas.svg",
-  NumPy: "/icons/numPy.svg",
   MongoDB: "/icons/mongodb.svg",
-  Firebase: "/icons/firebase.svg",
+  Python: "/icons/python.svg",
   Java: "/icons/java.svg",
   JavaScript: "/icons/javascript.svg",
   ReactJS: "/icons/react.svg",
@@ -51,21 +51,25 @@ const techIcons = {
   HTML5: "/icons/html.svg",
   CSS3: "/icons/css.svg",
   "Tailwind CSS": "/icons/tailwind.svg",
+  Postman: "/icons/postman.svg",
   Git: "/icons/git.svg",
   GitHub: "/icons/github.svg",
-  Postman: "/icons/postman.svg",
   "VS Code": "/icons/vscode.svg",
-  AWS: "/icons/aws.svg",
+  "Microsoft Excel": "/icons/excel.svg",
 };
 
 const skillGroups = [
   {
-    title: "Data Analytics",
-    skills: ["Power BI", "MySQL", "Excel", "Python", "Pandas", "NumPy"],
+    title: "ERP & Business Applications",
+    skills: [
+      "SAP ERP (Fundamentals – Currently Learning)",
+      "Power BI",
+      "Power Apps",
+    ],
   },
   {
     title: "Databases",
-    skills: ["MySQL", "MongoDB", "Firebase"],
+    skills: ["SQL", "MySQL", "MongoDB"],
   },
   {
     title: "Programming",
@@ -84,8 +88,18 @@ const skillGroups = [
   },
   {
     title: "Tools",
-    skills: ["Git", "GitHub", "Postman", "VS Code", "AWS"],
+    skills: ["Postman", "Git", "GitHub", "VS Code", "Microsoft Excel"],
   },
+];
+
+const businessSkills = [
+  "Requirements Analysis",
+  "Business Process Analysis",
+  "Functional Testing",
+  "Regression Testing",
+  "User Acceptance Testing (UAT)",
+  "API Testing",
+  "Documentation",
 ];
 
 const certificates = [
@@ -110,14 +124,15 @@ const experience = {
   company: "E-Science Corporation",
   duration: "December 2024 – May 2025",
   description:
-    "Supported data analytics and software quality initiatives by maintaining Power BI dashboards, validating data accuracy, performing database verification, and testing applications to ensure reliable reporting and system performance.",
+    "Supported software quality and business system improvement initiatives by validating application functionality, analyzing data accuracy, performing system testing, and ensuring reliable reporting and business process execution.",
+
   responsibilities: [
-    "Maintained and verified Power BI dashboards and reports by analyzing data consistency, investigating discrepancies, and ensuring accurate business reporting.",
-    "Performed data validation and dataset comparison using existing Python tools/scripts and MySQL to identify discrepancies and support accurate reporting.",
-    "Conducted API testing using Postman and performed database validation to ensure data integrity and system reliability.",
-    "Collaborated with developers through functional testing, regression testing, and User Acceptance Testing (UAT) to identify and resolve issues.",
-    "Data Analytics & Report Team (Dec 2024 – Jan 2025): Supported dashboard verification, report validation, and data accuracy checks for business reporting.",
-    "Allocation Logic System Team (Dec 2024 – May 2026): Tested system workflows, validated business rules, and assisted in improving application reliability.",
+    "Validated Power BI dashboards and business reports by reviewing data consistency, investigating discrepancies, and ensuring accurate information for decision-making.",
+    "Performed data validation and database verification using Python tools/scripts and MySQL to ensure data integrity and accuracy.",
+    "Conducted API testing using Postman and verified system responses to support reliable application integrations.",
+    "Executed functional testing, regression testing, and User Acceptance Testing (UAT) in collaboration with developers to identify and resolve system issues.",
+    "Data Analytics & Report Team (Dec 2024 – Jan 2025): Supported report validation, dashboard testing, and data quality checks for business reporting requirements.",
+    "Allocation Logic System Team (Dec 2024 – May 2026): Tested system workflows, validated business rules, and assisted in improving application reliability and process accuracy.",
   ],
   tools: [
     "Power BI",
@@ -209,10 +224,10 @@ const useTypewriter = (
 };
 
 const typewriterWords = [
-  "IT Analyst",
-  "Business Intelligence Analyst",
-  "SQL Developer",
-  "Software Quality Analyst",
+  "SAP Functional Consultant",
+  "ERP Consultant",
+  "Business Analyst",
+  "Business Process Analyst",
 ];
 
 // TypeWriter Component
@@ -329,7 +344,7 @@ function App() {
                 Kaysha Dela Peña
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                IT Analyst | Data Enthusiast
+                IT Graduate | Aspiring SAP Functional Consultant
               </p>
             </div>
           </div>
@@ -392,9 +407,11 @@ function App() {
               I am an aspiring
               <TypeWriter words={typewriterWords} />
             </div>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-              Aspiring IT Analyst with a strong interest in business
-              intelligence, databases, and data-driven decision making.
+            <p className="mt-6 max-w-2xl text-md leading-8 text-slate-600 dark:text-slate-300">
+              Information Technology graduate with a strong interest in business
+              process analysis, ERP systems, and technology-driven solutions.
+              Passionate about learning SAP and helping organizations improve
+              business processes through effective system solutions.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
@@ -458,17 +475,15 @@ function App() {
               </div>
               <div className="mt-6 space-y-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
                 <p>
-                  I am an aspiring IT Analyst with a strong interest in
-                  transforming data into meaningful insights that support better
-                  decision-making. I enjoy working with SQL, Power BI, Python,
-                  and databases to analyze, visualize, and communicate data
-                  effectively. My background in mobile and web development has
-                  strengthened my problem-solving skills and ability to build
-                  practical applications, while my experience with software
-                  testing has developed my attention to detail. I am seeking
-                  opportunities where I can contribute to data-driven projects
-                  while continuously expanding my analytical, technical, and
-                  problem-solving skills.
+                  I am an Information Technology graduate aspiring to build a
+                  career as an SAP Functional Consultant. I have a strong
+                  interest in business process analysis, ERP systems, and using
+                  technology to solve real-world business challenges. My
+                  background in software development, SQL, databases, and
+                  software testing has strengthened my analytical thinking,
+                  problem-solving abilities, and attention to detail. I am eager
+                  to learn, collaborate with teams, and contribute to projects
+                  that improve business processes through technology.
                 </p>
                 <div className="relative rounded-3xl border border-slate-200/80 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-950">
                   <img
@@ -513,12 +528,13 @@ function App() {
                   Career Objective
                 </p>
                 <p className="mt-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
-                  To begin my career as an IT Analyst by applying my knowledge
-                  of SQL, Power BI, Python, and database technologies to solve
-                  business problems through data. I aim to contribute to
-                  meaningful projects, continuously develop my analytical
-                  skills, and grow into a database developer or database
-                  administrator in the future.
+                  To begin my career as an entry-level SAP Functional Consultant
+                  by applying my technical knowledge, analytical skills, and
+                  understanding of business processes to support ERP
+                  implementation and business solutions. I am committed to
+                  continuously learning SAP technologies, developing my
+                  consulting skills, and contributing to projects that improve
+                  organizational efficiency and deliver value to clients.
                 </p>
               </div>
               <div className="flex-1 rounded-[2rem] border border-slate-200/80 bg-white/90 p-8 shadow-xl shadow-slate-900/5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80">
@@ -526,13 +542,14 @@ function App() {
                   Personal Summary
                 </p>
                 <p className="mt-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
-                  I am passionate about working with data to uncover insights,
-                  identify trends, and support informed decision-making. I enjoy
-                  building interactive Power BI dashboards, writing SQL queries,
-                  and exploring datasets to solve real-world problems. My
-                  experience in web development and software testing has
-                  strengthened my technical foundation, attention to detail, and
-                  problem-solving abilities.
+                  I am passionate about understanding business requirements and
+                  using technology to create effective solutions. My experience
+                  with software development, SQL, databases, and software
+                  testing has provided me with a strong technical foundation,
+                  while also strengthening my communication, analytical
+                  thinking, and problem-solving skills. As a lifelong learner, I
+                  am excited to grow in the field of SAP and ERP consulting
+                  while helping organizations improve their business processes.
                 </p>
               </div>
             </div>
@@ -554,7 +571,7 @@ function App() {
                   Skills
                 </p>
                 <h2 className="mt-3 text-3xl font-bold text-slate-950 dark:text-white">
-                  Technology expertise
+                  Technical & Business Skills
                 </h2>
               </div>
             </div>
@@ -567,11 +584,8 @@ function App() {
 
                 <div>
                   <h3 className="text-xl font-semibold text-slate-950 dark:text-white">
-                    Technologies & Tools
+                    Technical Skills & Tools
                   </h3>
-                  <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                    Core technologies I use for building applications
-                  </p>
                 </div>
               </div>
 
@@ -621,6 +635,29 @@ function App() {
                 ))}
               </div>
             </div>
+
+            <div className="mt-10 rounded-[1.75rem] border border-slate-200/70 bg-slate-50 p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950">
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-sky-500/10 text-sky-600 dark:bg-sky-500/20 dark:text-sky-300">
+                  <ClipboardDocumentCheckIcon className="h-6 w-6" />
+                </div>
+
+                <h3 className="text-xl font-semibold text-slate-950 dark:text-white">
+                  Business Analysis & Testing
+                </h3>
+              </div>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {businessSkills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </Motion.section>
 
@@ -638,21 +675,21 @@ function App() {
             </p>
 
             <h3 className="mt-10 text-2xl font-bold">
-              Data Analytics Projects
-            </h3>
-
-            <div className="mt-6 grid gap-8 md:grid-cols-1">
-              {analyticsProjects.map((project) => (
-                <ProjectCard key={project.title} project={project} />
-              ))}
-            </div>
-
-            <h3 className="mt-10 text-2xl font-bold">
               Software Development Projects
             </h3>
 
             <div className="mt-6 grid gap-8 md:grid-cols-2">
               {projects.map((project) => (
+                <ProjectCard key={project.title} project={project} />
+              ))}
+            </div>
+
+            <h3 className="mt-10 text-2xl font-bold">
+              Business Intelligence Dashboard
+            </h3>
+
+            <div className="mt-6 grid gap-8 md:grid-cols-1">
+              {analyticsProjects.map((project) => (
                 <ProjectCard key={project.title} project={project} />
               ))}
             </div>
