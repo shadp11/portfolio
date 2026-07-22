@@ -95,11 +95,11 @@ const skillGroups = [
 const businessSkills = [
   "Business Process Analysis",
   "Requirements Analysis",
+  "Documentation",
   "Functional Testing",
   "Regression Testing",
   "User Acceptance Testing (UAT)",
   "API Testing",
-  "Documentation",
 ];
 
 const certificates = [
@@ -344,7 +344,7 @@ function App() {
                 Kaysha Dela Peña
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                IT Graduate | Aspiring ERP Functional Consultant
+                IT Analyst
               </p>
             </div>
           </div>
@@ -421,17 +421,17 @@ function App() {
               >
                 View Projects
               </a>
-              <a
+              {/* <a
                 href="/Kaysha_DelaPeña_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
               >
                 Download Resume
-              </a>
+              </a> */}
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-sky-500 dark:text-slate-950 dark:hover:bg-sky-400"
+                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
               >
                 Contact Me
               </a>
@@ -891,14 +891,14 @@ function App() {
                   </div>
                 </div>
 
-                <a
+                {/* <a
                   href="/Kaysha_DelaPeña_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-400"
                 >
                   Download Resume
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="rounded-[2rem] border border-slate-200/80 bg-white/90 p-10 shadow-xl shadow-slate-900/5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80">
