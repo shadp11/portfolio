@@ -95,11 +95,21 @@ const skillGroups = [
 const businessSkills = [
   "Business Process Analysis",
   "Requirements Analysis",
-  "Documentation",
+  "Functional Requirements",
+  "Process Improvement",
+  "Software Development Life Cycle (SDLC)",
+];
+
+const qaSkills = [
   "Functional Testing",
   "Regression Testing",
+  "System Testing",
   "User Acceptance Testing (UAT)",
   "API Testing",
+  "Test Case Design",
+  "Test Execution",
+  "Defect Reporting & Tracking",
+  "Software Development Life Cycle (SDLC)",
 ];
 
 const certificates = [
@@ -225,9 +235,8 @@ const useTypewriter = (
 
 const typewriterWords = [
   "ERP Functional Consultant",
-  "Enterprise Applications Consultant",
   "Business Analyst",
-  "Business Process Analyst",
+  "Quality Assurance Tester",
 ];
 
 // TypeWriter Component
@@ -408,11 +417,11 @@ function App() {
               <TypeWriter words={typewriterWords} />
             </div>
             <p className="mt-6 max-w-2xl text-md leading-8 text-slate-600 dark:text-slate-300">
-              Information Technology graduate with a strong interest in business
-              process analysis, enterprise resource planning (ERP) systems, and
-              technology-driven solutions. Eager to build expertise in ERP
-              applications and contribute to improving business processes
-              through effective system implementation and support.
+              Information Technology graduate who is curious about how
+              technology and business come together, with a passion for
+              exploring systems, uncovering problems, and finding better ways to
+              make things work. I enjoy learning through challenges, asking
+              questions, and turning what I learn into exceptional solutions.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
@@ -477,15 +486,16 @@ function App() {
               <div className="mt-6 space-y-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
                 <p>
                   I am an Information Technology graduate with a strong interest
-                  in enterprise systems, business process analysis, and
-                  technology-driven solutions. Through my academic projects and
-                  technical experience in software development, SQL, databases,
-                  data validation, and software testing, I have developed strong
-                  analytical, problem-solving, and critical thinking skills. I
-                  enjoy understanding how technology supports business
-                  operations and aspire to build a career in ERP consulting,
-                  where I can help organizations improve efficiency through
-                  enterprise solutions.
+                  in delivering technology-driven solutions. Through my academic
+                  projects and technical experience in software development,
+                  software testing, business analysis, SQL, databases, and data
+                  validation, I have developed strong analytical,
+                  problem-solving, and critical thinking skills. I enjoy
+                  understanding how technology supports business operations,
+                  ensuring systems work as expected, and finding ways to improve
+                  them. I aspire to build a career in business technology, with
+                  an interest in areas such as quality assurance, business
+                  analysis, and technology solutions.
                 </p>
                 <div className="relative rounded-3xl border border-slate-200/80 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-950">
                   <img
@@ -530,13 +540,14 @@ function App() {
                   Career Objective
                 </p>
                 <p className="mt-5 text-slate-600 dark:text-slate-300 text-[15px] text-left text-justify">
-                  To begin my career as an ERP Functional Consultant by applying
-                  my technical knowledge, analytical skills, and understanding
-                  of business processes to support enterprise system
-                  implementations. I aim to continuously develop my expertise in
-                  ERP platforms, collaborate with experienced professionals, and
-                  contribute to projects that deliver value to organizations and
-                  their clients.
+                  To begin my career in business technology by applying my
+                  technical knowledge, analytical skills, and understanding of
+                  business processes to real-world challenges. I aim to
+                  continuously develop my skills in areas such as software
+                  quality assurance, business analysis, and enterprise systems
+                  while collaborating with experienced professionals and
+                  contributing to technology solutions that improve business
+                  processes and create value for organizations.
                 </p>
               </div>
               <div className="flex-1 rounded-[2rem] border border-slate-200/80 bg-white/90 p-8 shadow-xl shadow-slate-900/5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80">
@@ -550,7 +561,8 @@ function App() {
                   clear communication, attention to detail, and effective time
                   management. I approach new challenges with a positive mindset
                   and am committed to delivering high-quality results while
-                  growing as an ERP consulting professional.
+                  continuously learning and growing in the field of business
+                  technology.
                 </p>
               </div>
             </div>
@@ -644,12 +656,33 @@ function App() {
                 </div>
 
                 <h3 className="text-xl font-semibold text-slate-950 dark:text-white">
-                  Business Analysis & Testing
+                  Business Analysis
                 </h3>
               </div>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 {businessSkills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex items-center gap-4 mt-8">
+                <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-sky-500/10 text-sky-600 dark:bg-sky-500/20 dark:text-sky-300">
+                  <ClipboardDocumentCheckIcon className="h-6 w-6" />
+                </div>
+
+                <h3 className="text-xl font-semibold text-slate-950 dark:text-white">
+                  Quality Assurance
+                </h3>
+              </div>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {qaSkills.map((skill) => (
                   <span
                     key={skill}
                     className="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
